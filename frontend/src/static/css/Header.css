@@ -1,0 +1,27 @@
+#header {
+  padding: 1.2rem;
+  background-color: #0303c9;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#header h1 {
+  margin: 0;
+}
+#header nav {
+  margin: auto 5rem;
+  font-size: 1.3rem;
+}
+#header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+#header nav a:hover {
+  color: #b2b2b2;
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=Header.css.map */

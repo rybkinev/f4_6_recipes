@@ -1,0 +1,131 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "F4.6 Recipes API",
+    "version": "1.0.0",
+    "description": "API for all things …"
+  },
+  "paths": {
+    "/api/recipes/": {
+      "get": {
+        "operationId": "listRecipes",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Recipe"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["api"]
+      },
+    },
+    "/api/recipes/{id}/": {
+      "get": {
+        "operationId": "retrieveRecipe",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Recipe"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "A unique integer value identifying this recipe.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": ["api"]
+      },
+    },
+    "/api/ingredients/": {
+      "get": {
+        "operationId": "listIngredients",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ingredient"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["api"]
+      },
+    }
+  },
+  "components": {
+    "schemas": {
+      "Recipe": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "description": {
+            "type": "string"
+          },
+          "cook_time": {
+            "type": "integer",
+            "maximum": 9223372036854775807,
+            "minimum": -9223372036854775808,
+            "format": "int64",
+            "nullable": true
+          },
+          "cooking": {
+            "type": "string"
+          },
+          "category": {
+            "type": "integer"
+          }
+        },
+        "required": ["name", "description", "category"]
+      },
+      "Ingredient": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "readOnly": true
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 255
+          }
+        }
+      }
+    }
+  }
+}
