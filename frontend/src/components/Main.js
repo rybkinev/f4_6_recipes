@@ -4,22 +4,6 @@ import axios from "axios";
 
 export default function Main() {
   useEffect(() => {
-  //   fetch(
-  //     'http://localhost:8000/api/recipes/',
-  //     {
-  //       mode: 'no-cors',
-  //       method: 'GET',
-  //     }
-  //   )
-  // .then(response => {
-  //   console.debug(response)
-  //   if (response.ok) {
-  //     response.json()
-  //   }
-  // })
-  // .then((data) => {
-  //   console.log(data)
-  // });
 
     axios.get(
       'http://localhost:8000/api/recipes/'

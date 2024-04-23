@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../static/css/Header.css'
+import '../static/css/Header.css'
 import {Link} from "react-router-dom";
 
 

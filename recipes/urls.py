@@ -15,7 +15,7 @@ router.register(r'categories', views.CategoryViewSet)
 
 schemas = get_schema_view(
         title="F4.6 Recipes API",
-        description="It is API",
+        description="It is open API Schema for F4.6 recipes.",
         # patterns=[path('api/recipes/', include(router.urls), {'get': 'list'})],
     )
 urlpatterns = [
