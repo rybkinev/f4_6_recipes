@@ -20,8 +20,12 @@
       transition: transform 0.3s;
       display: inline-block;
 
+      &.active {
+        color: aqua;
+      }
+
       &:hover {
-        color: #b2b2b2;
+        //color: #b2b2b2;
         transform: scale(1.5);
       }
     }

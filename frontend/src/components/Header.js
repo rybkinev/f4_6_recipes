@@ -1,6 +1,6 @@
 import React from 'react';
 import '../static/css/Header.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 export default () => {
@@ -10,8 +10,9 @@ export default () => {
         <h1>Книга рецептов</h1>
       </div>
       <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/swagger'>Swagger</Link>
+        <NavLink to='/home' > Home </NavLink>
+
+        <NavLink to='/swagger' > Swagger </NavLink>
       </nav>
     </header>
   )

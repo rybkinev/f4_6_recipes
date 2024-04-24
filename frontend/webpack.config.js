@@ -20,6 +20,7 @@ module.exports = (env) => {
         { directory: path.join(__dirname, 'dist') }
       ],
       hot: true,
+      historyApiFallback: true,
     },
     stats: {
       children: false
@@ -28,6 +29,7 @@ module.exports = (env) => {
       path: path.join(__dirname, 'dist'),
       filename: "bundle.js",
       clean: true,
+      publicPath: '/'
     },
     // resolve: {
     //   extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],

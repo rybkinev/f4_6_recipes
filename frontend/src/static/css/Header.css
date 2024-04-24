@@ -19,8 +19,10 @@
   transition: transform 0.3s;
   display: inline-block;
 }
+#header nav a.active {
+  color: aqua;
+}
 #header nav a:hover {
-  color: #b2b2b2;
   transform: scale(1.5);
 }
 
