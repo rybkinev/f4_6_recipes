@@ -8,3 +8,10 @@ yarn install (npm install)
 
 Запуск:
 yarn start (npm start)
+
+
+Front:
+localhost:8080
+
+Backend:
+localhost:8000
