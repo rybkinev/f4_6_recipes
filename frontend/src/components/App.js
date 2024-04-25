@@ -5,7 +5,7 @@ import {Route, Routes, useNavigate} from "react-router-dom";
 import Main from "./Main";
 import Swagger from "./Swagger";
 import NotFound from "./NotFound";
-import Category from "./CategoryList";
+import Category from "./Category";
 import Recipes from "./Recipe";
 
 export default function App() {

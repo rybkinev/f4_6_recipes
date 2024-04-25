@@ -31,10 +31,6 @@ module.exports = (env) => {
       clean: true,
       publicPath: '/'
     },
-    // resolve: {
-    //   extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
-    //   fallback: { "stream": require.resolve("stream-browserify") }
-    // },
     module: {
       rules: [
         {
@@ -61,9 +57,6 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         template: "./src/index.html"
       }),
-      // new webpack.DefinePlugin({
-      //   'process.env': JSON.stringify(envVars),
-      // }),
       new MiniCssExtractPlugin({
         filename: 'styles.css'
       }),
