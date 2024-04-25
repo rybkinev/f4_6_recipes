@@ -1,7 +1,7 @@
 Инициализацция:
 
 python3 -m venv .venv
-activate .venv/bin/activate
+source .venv/bin/activate
 pip install -r requirements.txt
 cd frontend
 yarn install (npm install)
