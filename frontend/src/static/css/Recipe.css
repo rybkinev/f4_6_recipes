@@ -1,0 +1,23 @@
+#recipe {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+}
+#recipe > span {
+  margin: 0.5vh 0;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.46);
+  width: 100%;
+}
+#recipe > span h4 {
+  margin: 0 0 1rem 0;
+}
+#recipe .ingredients ul {
+  list-style-type: circle;
+}
+
+/*# sourceMappingURL=Recipe.css.map */
